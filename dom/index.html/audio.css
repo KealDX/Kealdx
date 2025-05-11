@@ -1,0 +1,35 @@
+.box {
+    height: 180px;
+    width: 180px;
+    background-color: blueviolet;
+    font-size: 40pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-shrink: 1;
+}
+body{
+    min-height: 700px;
+    border: 8px solid #333;
+    display: flex;
+    gap: 10px;
+
+}
+/*body {
+    display: flex;
+    border: 8px solid #333;
+    min-height: 700px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  
+} */
+
+/*body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
