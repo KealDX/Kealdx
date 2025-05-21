@@ -1,0 +1,72 @@
+/* Awards and Certifications Section */
+.awards {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #cfd49e, #8ba465); /* Matches other sections */
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.awards h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000; /* Matches the theme */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-auto-rows: 1fr; /* Ensures consistent row height */
+    gap: 20px;
+}
+.award:nth-child(1) {
+    grid-column: span 2; /* First award spans two columns */
+}
+.award:nth-child(2) {
+    grid-column: span 1; /* Second award spans one column */
+}
+.award {
+    background: #675507;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+.award:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+.award img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.award p {
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .awards h2 {
+        font-size: 2rem;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .award:nth-child(1),
+    .award:nth-child(2) {
+        grid-column: span 1; /* Reset column spans for smaller screens */
+    }
+
+    .award p {
+        font-size: 1rem;
+    }
+}

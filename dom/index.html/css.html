@@ -11,30 +11,35 @@
 <body>
 <header>
     <div class="logo">Keal Design Studio</div>
-    <button id="theme-toggle" class="theme-toggle">🌙</button>
     <nav>
       <ul> 
         <li><a href="#" class="active">Services</a></li>
-        <li><a href="#" class="active">About</a></li>
-        <li><a href="#" class="active">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
+       <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-2-line"></i></span>
+        </div>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
   </header>
 
   <!-- Call-to-Action Section -->
-<section class="hero">
-  <div class="hero-content">
-  <h2>Ready to Transform Your Space?</h2>
-  <p class="fade-in delay-1">Contact us today to schedule a consultation and bring your vision to life.</p>
-  <a href="#contact" class="cta-button">Get Started</a>
-  </div>
-</section>
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Transform Your Space with Keal Design Studio</h1>
+        <p>Innovative, timeless, and sustainable designs tailored to your vision.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
+    </div>
+  </section>
 
 <section class="social-proof-section">
   <div class="social-proof">
     <div class="social"></div>
     <h2>Trusted by Visionaries, Backed by Results</h2>
-    <q class="fade-in delay-2">Over <strong>100+ successful projects</strong> delivered to clients who value Innovative and timeless architectural design</q>
+    <q class="fade-in delay-2">Over <strong>100+ successful projects</strong> delivered to clients who value innovative and timeless architectural design.</q>
     </div>
   </section>
 
@@ -57,7 +62,7 @@
     <h2>Our Portfolio</h2>
     <div class="portfolio-grid">
       <div class="portfolio-item">
-      <img src="domlin.jpeg" alt="Modern Office Space">
+      <img src="pexels.jpeg" alt="Modern Office Space">
       <h3>Modern Office Space</h3>
     </div>
     <div class="portfolio-item">
@@ -126,39 +131,46 @@
     <p>Keal Design Studio is a team of passionate architects and designers dedicated to creating spaces that inspire. With over a decade of experience, we specialize in bold, elegant, and sustainable designs that stand the test of time.</p>
     </div>
     <div class="about-image">
-      <img src="about-image.jpg" alt="About Us">
+      <img src="pexels.jpeg" alt="About Us">
       </div>
     </div>
 </section>
 
 <!-- Team Section -->
-<section class="team">
+<div class="team">
   <h2>Meet Our Team</h2>
+  <p class="team-intro">Our talented team of professionals is dedicated to bringing your vision to life with creativity and expertise.</p>
   <div class="team-grid">
-    <div class="team-member">
-      <img src="team-member1.jpg" alt="Jane Doe - Lead Architect">
+    <div class="team-member1">
+      <div class="team-image">
+        <img src="team-member1.jpg" alt="Jane Doe - Lead Architect">
+      </div>
       <h3>Jane Doe</h3>
-      <p>Lead Architect</p>
+      <q>Lead Architect</q>
       <div class="social-icons">
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <div class="team-member">
-      <img src="team-member2.jpg" alt="John Smith - Interior Designer">
+    <div class="team-member2">
+      <div class="team-image">
+        <img src="team-member2.jpg" alt="John Smith - Interior Designer">
+      </div>
       <h3>John Smith</h3>
-      <p>Interior Designer</p>
+      <q>Interior Designer</q>
       <div class="social-icons">
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <div class="team-member">
-      <img src="team-member3.jpg" alt="Emily Johnson - Project Manager">
+    <div class="team-member3">
+      <div class="team-image">
+        <img src="team-member3.jpg" alt="Emily Johnson - Project Manager">
+    </div>
       <h3>Emily Johnson</h3>
-      <p>Project Manager</p>
+      <q>Project Manager</q>
       <div class="social-icons">
         <a href="#"><i class="fab fa-linkedin"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -166,7 +178,7 @@
       </div>
     </div>
   </div>
-</section>
+</div> 
 
 <!-- Awards and Certifications Section -->
 <section class="awards">
@@ -202,47 +214,49 @@
   </div>
 </section>
 
-<section class="contact-faq">
-  <!-- Contact Section -->
-  <div class="contact-container">
-    <div class="contact-image">
-      <img src="contact-image.jpg" alt="Contact Us">
-    </div>
-    <div class="contact-form-section">
-    <h2>Reach Out To Us</h2>
-  <p>We'd love to hear from you! Reach out to us for inquires, collaborations.</p>
-    <form class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+ <!-- Contact section-->
+ <section class="contact-section">
+  <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Have questions or need help? Feel free to reach out to us. We're here to assist you!</p>
   </div>
-</div>
+  <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</section>
 
 <!--FAQ section -->
-<div class="faq">
+<section class="faq-section">
   <h2>Frequently Asked Questions</h2>
   <div class="faq-item">
-      <h3>How can I schedule a consultation?</h3>
-      <p>You can schedule a consultation by filling out the contact form or calling us directly at +1 (234) 567-890.</p>
+      <h3>What services do you offer? <span>+</span></h3>
+      <p>We offer a wide range of architectural and design services tailored to your needs.</p>
   </div>
   <div class="faq-item">
-      <h3>What services do you offer?</h3>
-      <p>We offer architectural design, interior design, and project management services. Visit our <a href="services.html">Services</a> page for more details.</p>
+      <h3>How can I contact you? <span>+</span></h3>
+      <p>You can contact us via the form above or email us directly at support@example.com.</p>
   </div>
   <div class="faq-item">
-      <h3>Do you work on residential or commercial projects?</h3>
-      <p>We work on both residential and commercial projects, tailoring our designs to your needs.</p>
-      </div>
-    </div>
+      <h3>Do you offer custom designs? <span>+</span></h3>
+      <p>Yes, we specialize in creating custom designs that match your vision and requirements.</p>
+  </div>
 </section>
 
 <section class="map">
   <h2>Find Us Here</h2>
   <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194154846816!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f5e0b1b1%3A0x4e9b8f4b4b4b4b4b!2s123%20Design%20Street%2C%20Creative%20City%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus"
-  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" title="Keal Design Studio Location"></iframe>
+  src="https://www.google.com/maps/embed?pb=..."
+  class="map-iframe"
+  allowfullscreen=""
+  loading="lazy"
+  title="Keal Design Studio Location">
+</iframe>
 </section>
 <!-- Newsletter Signup Section -->
 <section class="newsletter">
