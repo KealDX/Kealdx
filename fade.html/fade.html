@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="fade.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+     <nav>
+        <div class="div__header">
+            <div class="div__logo">
+            <a href="#">KealDx Enterprise</a>
+            </div>
+            <div class="div__menu__btn" id="menu-btn">
+                <i class="ri-menu-4-line" id="menu-icon"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="div__btns">
+            <button class="btn"><i class="ri-profile-fill"></i></button>
+            <button class="btn"><i class="ri-search-line"></i></button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>
+                Hi, I'm <span class="highlight">KealDx</span>.<br>
+                I build elegant, modern web experiences.<br>
+                Explore my work and let's create something amazing and inspiring together!
+            </p>
+            <button class="hero__cta">View My Work</button>
+        </div>
+        <div class="hero__image">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Hero" />
+        </div>
+    </section>
+
+    
+    <!-- ...existing hero section... -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate web developer with a love for creating beautiful and functional digital experiences. With a background in design and coding, I bring ideas to life on the web.
+            </p>
+        </div>    
+    </section>
+
+     <section class="skills" id="skills">
+  <div class="skills__container">
+    <h2>Skills</h2>
+    <ul class="skills__list">
+      <li>
+        <span class="skill-icon"><i class="ri-html5-fill"></i></span>
+        <span class="skill-name">HTML5</span>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 95%"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-icon"><i class="ri-css3-fill"></i></span>
+        <span class="skill-name">CSS3</span>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 90%"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-icon"><i class="ri-javascript-fill"></i></span>
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 70%"></div>
+        </div>
+      </li>
+      <li>
+        <span class="skill-icon"><i class="ri-reactjs-fill"></i></span>
+        <span class="skill-name">React</span>
+        <div class="skill-bar">
+          <div class="skill-bar-fill" style="width: 60%"></div>
+        </div>
+      </li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </div>
+</section>
+
+    <!-- Projects/Portfolio Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+        <div class="project-grid">
+              <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Project 1">
+                <h3>Architectual Design Studio</h3>
+                <p>A new development into Architectural design, bringing great mind to build towards the future</p>
+                <a href="#" class="project-link">View Project</a>
+        </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Project 2">
+        <h3>My Portfolio</h3>
+        <p>My Portfolio showing my journey into front-end development.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-contact" id="testimonials-contact">
+  <div class="testimonials-contact__container">
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial-list">
+        <blockquote>
+          "KealDx delivered our project on time and exceeded our expectations!"
+          <cite>- Happy Client</cite>
+        </blockquote>
+        <blockquote>
+          "Professional, creative, and highly recommended."
+          <cite>- Another Client</cite>
+        </blockquote>
+      </div>
+    </div>
+  <div class="contact">
+        <div class="contact-icon"><i class="ri-mail-send-line"></i></div>
+        <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 KealDx Enterprise. All rights reserved.</p>
+  </div>
+</footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
