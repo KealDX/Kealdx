@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="stylle.css" />
+</head>
+<body>
+  <header>
+    <!---  <img src="beettle.jpeg" class="logo">-->
+        <div class="container">
+          <h1>Keal Enterprise</h1>
+          <nav>
+            <a href="newindex4.html">Home</a>
+            <a href="project">Projects</a>
+            <a href="services.html">Services</a>
+          </nav>
+        </div>
+      </header>
+      
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Please fill out the form below.</p>
+    <form id="contactForm">
+
+      <div class="input-group">
+        <label for="name">Your Name</label> 
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="message">Send us a Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p class="form-feedback" id="formFeedback"></p>
+    </form>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>

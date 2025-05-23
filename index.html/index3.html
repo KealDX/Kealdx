@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architectural Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="Styles.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Keal Design Enterprise</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="about.html" class="hover:text-indigo-600">About</a>
+        <a href="#services" class="hover:text-indigo-600">Our Services</a>
+        <a href="contact.html" class="hover:text-indigo-600">Contact Us</a>
+      </nav>
+
+      <button class="md:hidden text-indigo-600 focus:outline-none" id="menuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="md:hidden px-4 pb-4 hidden" id="mobileMenu">
+      <a href="#about" class="block py-2 hover:text-indigo-600">About</a>
+      <a href="#projects" class="block py-2 hover:text-indigo-600">Projects</a>
+      <a href="#services" class="block py-2 hover:text-indigo-600">Services</a>
+      <a href="#contact" class="block py-2 hover:text-indigo-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen bg-[url('https://images.unsplash.com/photo-1581091012184-7e0cdfbb6795?auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center flex items-center justify-center text-white text-center px-4">
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Innovative Architectural Designs</h2>
+      <p class="text-lg md:text-xl mb-6">Creating spaces that inspire and connect</p>
+      <a href="#contact" class="bg-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center mb-8">About Us</h3>
+    <p class="text-center max-w-3xl mx-auto">At Keal Enterprise, we blend art and functionality to bring your vision to life. With a team of seasoned architects and designers, we ensure every project is crafted with precision and creativity.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-50 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-12">Our Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl">Modern Villa</h4>
+            <p class="text-gray-600">A sleek, contemporary residence blending form and function.</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl">Eco Office Space</h4>
+            <p class="text-gray-600">Sustainable design solutions for modern work environments.</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1603574873286-38474fd555c9?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="font-semibold text-xl">Urban Apartment</h4>
+            <p class="text-gray-600">Smart living spaces designed for city And Luxury life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-3xl font-bold text-center mb-8">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <h4 class="text-xl font-semibold mb-2">Architectural Designs</h4>
+        <p>Tailored architectural solutions that meet your aesthetic and functional needs.</p>
+      </div>
+      <div class="text-center">
+        <h4 class="text-xl font-semibold mb-2">Interior Designs</h4>
+        <p>Creating cohesive and stylish interiors that reflect your personality.</p>
+      </div>
+      <div class="text-center">
+        <h4 class="text-xl font-semibold mb-2">Project Management</h4>
+        <p>Comprehensive oversight from concept to completion ensuring quality delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-indigo-600 text-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Let's Talk About Your Project</h3>
+      <p class="mb-6">Get in touch with us to start building your dream space today.</p>
+      <a href="mailto:info@archdesign.com" class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Keal Enterprise. All rights reserved.</p>
+  </footer>
+
+ 
+</body>
+</html>

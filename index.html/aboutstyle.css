@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+  body {
+    font-family: 'Outfit', sans-serif;
+    color: #1f1f1f;
+    line-height: 1.6;
+    background: #e6bdbd;
+    background-position:  no-repeat;
+    overflow: hidden;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
+    height: auto;
+    padding: 0px 0px;
+    margin: 15px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container {
+    max-width: 2020px;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: relative;
+    background-color: #361b36;
+    font-style: Bold ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 33px;
+    height: 80px;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  nav {
+    display: flex;
+    align-items: grid;
+    padding: 1em 0;
+  }
+  nav a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    /*transition: all ease-in 0.5s;*/
+  }
+  nav a:hover {
+    color: #959b98;
+    transition: 0.5s ease;
+  }
+  .btn{
+    display: inline-block;
+    padding: 3px 3px;
+    margin-right: 0.54em;
+    background-color: #fff;
+    color: #764ba2;
+    text-decoration: bold;
+    border: none;
+    border-radius: 70px;
+    font-size: 1rem;
+    cursor: alias;
+    transition: background-color 1s;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #0056b3;
+  }
+  section {
+    padding: 15px 20px;
+    max-width: 620px;
+    margin: 0%;
+    display:inline-block;
+    margin-top: 100px;
+    font-display: #64e3e7;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+  }
+
+
+
+ /* section c {
+    max-width: 600px;
+    margin: 60px 600px;
+    font-style: oblique;
+    margin-top: 150px;
+    align-items: center;
+    background: none;
+  }
+  .corevalues{
+    text-align: center;
+    justify-content: center;
+    
+  }*/
+  footer {
+    background-color: #361b36;
+    color: #fff;
+    padding: 30px;
+    font-size: 15px;
+    margin: 300px 0px;
+    height: 80px;
+    text-align: center;
+    border-radius: 25px;
+  }
+  footer.container {
+    
+  }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b894;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #00b894;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #019e7c;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.hero-content {
+  flex: 1 1 45%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.feature {
+  background: #f1f1f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.how-it-works {
+  padding: 4rem 2rem;
+  background-color: #e8f6f3;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  margin-bottom: 1rem;
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+  font-size: 1.1rem;
+}
+
+.cta {
+  padding: 4rem 2rem;
+  background: #00b894;
+  color: white;
+  text-align: center;
+}
+
+.cta .btn {
+  margin-top: 1rem;
+  background-color: #fff;
+  color: #00b894;
+}
+
+.cta .btn:hover {
+  background-color: #f1f1f1;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #fff;
+}

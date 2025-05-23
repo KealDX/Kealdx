@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    color: #1f1f1f;
+    line-height: 1.6;
+    background: #e6bdbd;
+    background-position:  no-repeat;
+    overflow: hidden;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
+    height: auto;
+    padding: 0px 0px;
+    margin: 5px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    max-width: 1900px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: relative;
+    background-color: #361b36;
+    font-style: Bold ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 35px;
+    height: 70px;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  nav {
+    display: flex;
+    align-items: grid;
+    padding: 1em 0;
+  }
+ nav a {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 5px;
+    /*transition: all ease-in 0.5s;*/
+  }
+
+  nav a:hover {
+    color: #1c65b8;
+    transition: 0.5s ;
+  }
+  .btn{
+    display: inline-block;
+    padding: 3px 3px;
+    margin-right: 0.54m;
+    background-color: #fff;
+    color: #764ba2;
+    text-decoration: bold;
+    border: none;
+    border-radius: 70px;
+    font-size: 1rem;
+    cursor: alias;
+    transition: background-color 1s;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #0056b3;
+  }
+  
+ /*.Mild {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+  }
+
+  .Mild::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5) ;
+  }
+
+  .Mild-content {
+    position: relative;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+
+  .Mild h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .Mild p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Mild a {
+    padding: 0.75rem 1.5rem;
+    background-color: #52dc87;
+    color: white;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .Mild a:hover {
+    background-color: #52dc87
+  }*/
+
+  
+  section {
+    padding: 5rem 1rem;
+    max-width: 1500px;
+    margin: auto;
+  }
+
+  section h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    font-style: italic;
+  }
+  section h4 {
+    font-size: 20px;
+    
+  }
+
+  section p {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .project-card h4 {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+    padding: 0 1rem;
+  }
+  .project-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+  .services h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  .contact a {
+    display: inline-block;
+    background: white;
+    color: #4f46e5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  }

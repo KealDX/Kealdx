@@ -1,0 +1,264 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      color: #1f1f1f;
+      background-color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    header .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #4f46e5;
+      font-size: 1.75rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #4f46e5;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1581091012184-7e0cdfbb6795?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a {
+      padding: 0.75rem 1.5rem;
+      background-color: #4f46e5;
+      color: white;
+      text-decoration: none;
+      border-radius: 9999px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #4338ca;
+    }
+
+    section {
+      padding: 5rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    section p {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h4 {
+      font-size: 1.25rem;
+      margin: 0.75rem 0;
+      padding: 0 1rem;
+    }
+
+    .project-card p {
+      padding: 0 1rem 1rem;
+      color: #666;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .services h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact {
+      background: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .contact a {
+      display: inline-block;
+      background: white;
+      color: #4f46e5;
+      padding: 0.75rem 1.5rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .contact a:hover {
+      background: #f3f3f3;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+    }
+    /*
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>ArchDesign</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Innovative Architectural Designs</h2>
+      <p>Creating spaces that inspire and connect</p>
+      <a href="#contact">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>At ArchDesign, we blend art and functionality to bring your vision to life. With a team of seasoned architects and designers, we ensure every project is crafted with precision and creativity.</p>
+  </section>
+
+  <section id="projects">
+    <h3>Our Projects</h3>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Project 1">
+        <h4>Modern Villa</h4>
+        <p>A sleek, contemporary residence blending form and function.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="Project 2">
+        <h4>Eco Office Space</h4>
+        <p>Sustainable design solutions for modern work environments.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1603574873286-38474fd555c9?auto=format&fit=crop&w=800&q=80" alt="Project 3">
+        <h4>Urban Apartment</h4>
+        <p>Smart living spaces designed for city life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div>
+        <h4>Architectural Design</h4>
+        <p>Tailored architectural solutions that meet your aesthetic and functional needs.</p>
+      </div>
+      <div>
+        <h4>Interior Design</h4>
+        <p>Creating cohesive and stylish interiors that reflect your personality.</p>
+      </div>
+      <div>
+        <h4>Project Management</h4>
+        <p>Comprehensive oversight from concept to completion ensuring quality delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Let's Talk About Your Project</h3>
+    <p>Get in touch with us to start building your dream space today.</p>
+    <a href="mailto:info@archdesign.com">Email Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ArchDesign. All rights reserved.</p>
+  </footer>
+</body>
+</html>

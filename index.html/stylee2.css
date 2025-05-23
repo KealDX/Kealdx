@@ -1,0 +1,221 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}  
+body {
+    color: #1f1f1f;
+    line-height: 0.4;
+    background: #e6bdbd;
+    overflow: hidden;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 60px;
+    padding: 0px 10px;
+    margin: 0px 15px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    max-width: 120%;
+    margin: 10px 280px;
+    padding: 5px 20px;
+    display: flex;
+    justify-self: left;
+    position: relative ;
+    background-color: #361b36;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 30px;
+    height: 40px;
+
+  }
+  /*.logo {
+    justify-content: flex;
+  }*/
+  .container.search-wrapper{
+    display: flex;
+    margin: 10px 30px;
+
+  }
+  .search{
+    background-color: #fff;
+  }
+  /*header h1 {
+    color: #fff;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    justify-items: left;
+    align-items: stretch;
+  }*/
+  h1 {
+    display: block;
+    font-size: 38px;
+    margin: 10px 0px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: left;
+}
+  .search-wrapper {
+    justify-content: inherit;
+    background-color: #fff;
+    box-sizing: content-box;
+    padding: 20px 0px;
+    margin: 100px  2100px;
+    display: flex;
+  }
+  .search-wrapper.navbar{
+    display: block;
+  }
+  
+  .nav{
+    display: space-between;
+    align-items: grid;
+    padding: 10px 0px;
+  }
+  .nav ul {  }
+  .nav a {
+    font-size:18px; 
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+    font-weight: 500;
+    
+
+  }
+
+  .nav a:hover {
+    color: #959b98;
+    transition: 0.8s ease;
+
+  }
+ .btn{
+    display: inline-block;
+    padding: 3px 3px;
+    margin-right: 0.54m;
+    background-color: #fff;
+    color: #764ba2;
+    text-decoration: bold;
+    border: none;
+    border-radius: 70px;
+    font-size: 1rem;
+    cursor: alias;
+    transition: background-color 1s;
+  }
+  .btn:hover,
+  .btn:focus {
+    background-color: #0056b3;
+  }
+  .logo{
+  
+
+  }
+section {
+    padding: 15px 20px;
+    max-width: 620px;
+    justify-content: right;
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    box-shadow: none;
+}
+section h3 {
+    font-size: 40px;
+    background: scroll;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #361b36;
+    position: right;
+    margin: 70px;
+    align-content: center;
+}
+section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 65px;
+    position: right;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 2rem;
+}
+.project-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-top: 40px;
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: o.5s ease;
+    margin-top: 300px;
+  }
+.project-card h4 {
+    font-size: 1.25rem;
+    margin: 0.75rem 0;
+    padding: 0 1rem;
+  }
+.project-card p {
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+.services h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+.contact {
+    background: transparent;
+    color: #333;
+    padding: 4rem 1rem;
+    font-size: 20px;
+    justify-content: right;
+  }
+.contact a {
+    display: inline-block;
+    background: #764ba2;
+    color: #fff;
+    padding: 15px 15px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+    justify-content: right;
+  }
+.btn2 {
+    padding: 3px 3px;
+    text-decoration: blanchedalmond;
+    border: none;
+    font-size: 1rem;
+
+  }
+.btn2:hover,
+.btn2:focus {
+    background-color: #fff;
+    color: #764ba2;
+    transition: 0.3s ease-in;
+  }
+footer {
+    background-color: #361b36;
+    color: #fff;
+    padding: 30px;
+    font-size: 15px;
+    margin: 250px 0px;
+    height: 80px;
+    text-align: center;
+    border-radius: 30px;
+  }
